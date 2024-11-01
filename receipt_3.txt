@@ -1,0 +1,11 @@
+Receipt
+=============================
+Checkout done by: Liam
+Checkout details for Customer: Ian
+Items purchased:
+Item: Chicken, Quantity: 1, Price per item: 43.397347517328, Total: 43.397347517328
+Item: Chicken, Quantity: 1, Price per item: 38.60226392990178, Total: 38.60226392990178
+Total Price: 81.99961144722978
+
+Thank You For Your Purchase!
+=============================

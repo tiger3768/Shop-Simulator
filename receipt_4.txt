@@ -1,0 +1,11 @@
+Receipt
+=============================
+Checkout done by: Olivia
+Checkout details for Customer: Fiona
+Items purchased:
+Item: Bananas, Quantity: 2, Price per item: 10.46849716440685, Total: 20.9369943288137
+Item: Chicken, Quantity: 3, Price per item: 43.397347517328, Total: 130.192042551984
+Total Price: 151.1290368807977
+
+Thank You For Your Purchase!
+=============================

@@ -1,0 +1,38 @@
+Store Simulation Log
+====================
+Customer 1 entered the store at 3 ms. People inside now: 1.
+Customer 2 entered the store at 5 ms. People inside now: 2.
+Customer 1 browsed and added items to cart.
+Customer 2 browsed and added items to cart.
+Customer 3 entered the store at 5 ms. People inside now: 3.
+Customer 3 browsed and added items to cart.
+Customer 4 entered the store at 7 ms. People inside now: 4.
+Customer 4 browsed and added items to cart.
+Customer 5 entered the store at 7 ms. People inside now: 5.
+Customer 5 browsed and added items to cart.
+Customer 9 gave up waiting to enter due to store capacity limits after 22 ms.
+Customer 1 is being checked out by cashier 1 at 49 ms.
+Customer 2 is being checked out by cashier 2 at 50 ms.
+Customer 3 is being checked out by cashier 3 at 51 ms.
+Customer 4 is being checked out by cashier 4 at 51 ms.
+Customer 5 is being checked out by cashier 5 at 51 ms.
+Customer 11 gave up waiting to enter due to store capacity limits after 54 ms.
+Customer 6 gave up waiting to enter due to store capacity limits after 54 ms.
+Customer 12 gave up waiting to enter due to store capacity limits after 69 ms.
+Customer 10 gave up waiting to enter due to store capacity limits after 69 ms.
+Customer 8 gave up waiting to enter due to store capacity limits after 69 ms.
+Customer 7 gave up waiting to enter due to store capacity limits after 100 ms.
+Cashier 1 completed checkout for Customer 1.
+Cashier 4 completed checkout for Customer 4.
+Cashier 5 completed checkout for Customer 5.
+Customer 1 exited the store at 121 ms. People inside now: 4.
+Cashier 2 completed checkout for Customer 2.
+Customer 2 exited the store at 121 ms. People inside now: 3.
+Customer 5 exited the store at 121 ms. People inside now: 2.
+Customer 4 exited the store at 121 ms. People inside now: 1.
+Cashier 3 completed checkout for Customer 3.
+Customer 3 exited the store at 122 ms. People inside now: 0.
+
+Total customers served: 5
+Business lost due to store space: 7
+Business lost due to cashier unavailability: 0

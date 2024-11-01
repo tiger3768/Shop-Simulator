@@ -1,0 +1,14 @@
+Receipt
+=============================
+Checkout done by: Mason
+Checkout details for Customer: Hannah
+Items purchased:
+Item: Milk, Quantity: 1, Price per item: 42.64269488347789, Total: 42.64269488347789
+Item: Bananas, Quantity: 1, Price per item: 10.46849716440685, Total: 10.46849716440685
+Item: Chicken, Quantity: 1, Price per item: 43.397347517328, Total: 43.397347517328
+Item: Chicken, Quantity: 1, Price per item: 38.60226392990178, Total: 38.60226392990178
+Item: Apples, Quantity: 1, Price per item: 43.65156428428058, Total: 43.65156428428058
+Total Price: 178.7623677793951
+
+Thank You For Your Purchase!
+=============================

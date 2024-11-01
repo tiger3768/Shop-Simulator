@@ -1,0 +1,11 @@
+Receipt
+=============================
+Checkout done by: Mason
+Checkout details for Customer: Charlie
+Items purchased:
+Item: Chicken, Quantity: 1, Price per item: 43.397347517328, Total: 43.397347517328
+Item: Apples, Quantity: 1, Price per item: 43.65156428428058, Total: 43.65156428428058
+Total Price: 87.04891180160858
+
+Thank You For Your Purchase!
+=============================

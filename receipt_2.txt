@@ -1,0 +1,11 @@
+Receipt
+=============================
+Checkout done by: Olivia
+Checkout details for Customer: Bob
+Items purchased:
+Item: Milk, Quantity: 2, Price per item: 42.64269488347789, Total: 85.28538976695577
+Item: Chicken, Quantity: 1, Price per item: 43.397347517328, Total: 43.397347517328
+Total Price: 128.68273728428377
+
+Thank You For Your Purchase!
+=============================
