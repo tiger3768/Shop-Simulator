@@ -108,7 +108,7 @@ public class Store {
             availableCashier = getAvailableCashier();
 			availableCashier.setBusy(true);
             log("Customer " + c.getId() + " is being checked out by cashier " + availableCashier.getCashierId() + " at " + getRelativeTime() + " ms.\n");
-            cashierAvailable.signalAll();
+            
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             return;
@@ -117,6 +117,7 @@ public class Store {
         }
 
         availableCashier.checkout(c, this);
+		cashierAvailable.signalAll();
         totalServedCustomers++;
         log("Cashier " + availableCashier.getCashierId() + " completed checkout for Customer " + c.getId() + ".\n");
     }
