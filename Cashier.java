@@ -21,7 +21,7 @@ public class Cashier{
         return busy;
     }
 
-    public void checkout(Customer c, Store s) {
+    public synchronized void checkout(Customer c, Store s) {
         busy = true;
         double totalPrice = 0.0;
         Map<Integer, Integer> cart = c.getCart();
