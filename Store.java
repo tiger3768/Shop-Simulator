@@ -77,12 +77,14 @@ public class Store {
     }
 
     public void browse(Customer c) {
-        for (Integer item : c.getListOfItems()) {
-            if (itemAvailability.get(item) > 0) {
-                itemAvailability.set(item, itemAvailability.get(item) - 1);
-                c.getCart().put(item, c.getCart().getOrDefault(item, 0) + 1);
-            }
-        }
+	    for (Integer item : c.getListOfItems()) {
+	        synchronized (itemAvailability) {
+	            if (itemAvailability.get(item) > 0) {
+	                itemAvailability.set(item, itemAvailability.get(item) - 1);
+	                c.getCart().put(item, c.getCart().getOrDefault(item, 0) + 1);
+	            }
+	        }
+	    }
         log("Customer " + c.getId() + " browsed and added items to cart.\n");
     }
 
@@ -104,13 +106,13 @@ public class Store {
             }
 
             availableCashier = getAvailableCashier();
+			availableCashier.setBusy(true);
             log("Customer " + c.getId() + " is being checked out by cashier " + availableCashier.getCashierId() + " at " + getRelativeTime() + " ms.\n");
-            
+            cashierAvailable.signalAll();
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
             return;
         } finally {
-            cashierAvailable.signalAll();
             checkoutLock.unlock();
         }
 
@@ -140,13 +142,16 @@ public class Store {
     }
 
     private void log(String message) {
-        try {
-            logWriter.write(message);
-            logWriter.flush();
-        } catch (IOException e) {
-            System.err.println("Error writing to log file: " + e.getMessage());
-        }
-    }
+	    synchronized (logWriter) {
+	        try {
+	            logWriter.write(message);
+	            logWriter.flush();
+	        } catch (IOException e) {
+	            System.err.println("Error writing to log file: " + e.getMessage());
+	        }
+	    }
+	}
+
     
     public void generateReceipt(String logData, Integer customerId) {
         try {
